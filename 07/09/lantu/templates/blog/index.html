@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 50%;
+            padding: 20px 10px;
+            border-bottom: 1px dashed grey;
+        }
+
+        .box p {
+            font-size: 12px;
+            color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>博客首页</h1>
+    {% if blogs %}
+        {% for blog in blogs %}
+            <div class="box">
+                <h3>{{blog.title}}</h3>
+                <p>{{blog.content}}</p>
+                <p>作者：<span>{{blog.author}}</span></p>&nbsp; &nbsp; &nbsp;
+                   发布时间：<span>{{blog.datetime}}</span>&nbsp; &nbsp; &nbsp;
+                   阅读量：<span>{{blog.click_num}}</span>
+				   &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+				   <a href="{{url_for('blog.del',id=loop.index0)}}">删除</a>
+            </div>
+        {% endfor %}
+		<a href="{{url_for('blog.add')}}">发表新文章</a>
+    {% else %}
+        还没有任何的博客文章，赶快点击<a href="{{url_for('blog.add')}}">发表</a>吧！
+    {% endif %}
+</body>
+</html>
