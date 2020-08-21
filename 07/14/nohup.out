@@ -1,0 +1,85 @@
+2020-07-14T16:25:09.448+0800 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2020-07-14T16:25:09.452+0800 W  ASIO     [main] No TransportLayer configured during NetworkInterface startup
+2020-07-14T16:25:09.452+0800 I  CONTROL  [initandlisten] MongoDB starting : pid=22303 port=27017 dbpath=/data/db 64-bit host=docker
+2020-07-14T16:25:09.452+0800 I  CONTROL  [initandlisten] db version v4.2.7
+2020-07-14T16:25:09.453+0800 I  CONTROL  [initandlisten] git version: 51d9fe12b5d19720e72dcd7db0f2f17dd9a19212
+2020-07-14T16:25:09.453+0800 I  CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1e-fips 11 Feb 2013
+2020-07-14T16:25:09.453+0800 I  CONTROL  [initandlisten] allocator: tcmalloc
+2020-07-14T16:25:09.453+0800 I  CONTROL  [initandlisten] modules: none
+2020-07-14T16:25:09.453+0800 I  CONTROL  [initandlisten] build environment:
+2020-07-14T16:25:09.453+0800 I  CONTROL  [initandlisten]     distmod: rhel70
+2020-07-14T16:25:09.453+0800 I  CONTROL  [initandlisten]     distarch: x86_64
+2020-07-14T16:25:09.453+0800 I  CONTROL  [initandlisten]     target_arch: x86_64
+2020-07-14T16:25:09.453+0800 I  CONTROL  [initandlisten] options: {}
+2020-07-14T16:25:09.459+0800 I  STORAGE  [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2020-07-14T16:25:09.459+0800 I  STORAGE  [initandlisten] 
+2020-07-14T16:25:09.459+0800 I  STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2020-07-14T16:25:09.459+0800 I  STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2020-07-14T16:25:09.459+0800 I  STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=407M,cache_overflow=(file_max=0M),session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress],
+2020-07-14T16:25:10.257+0800 I  STORAGE  [initandlisten] WiredTiger message [1594715110:257482][22303:0x7ff1bcf32c40], txn-recover: Recovering log 12 through 13
+2020-07-14T16:25:10.355+0800 I  STORAGE  [initandlisten] WiredTiger message [1594715110:355334][22303:0x7ff1bcf32c40], txn-recover: Recovering log 13 through 13
+2020-07-14T16:25:10.457+0800 I  STORAGE  [initandlisten] WiredTiger message [1594715110:457435][22303:0x7ff1bcf32c40], txn-recover: Main recovery loop: starting at 12/7680 to 13/256
+2020-07-14T16:25:10.586+0800 I  STORAGE  [initandlisten] WiredTiger message [1594715110:586839][22303:0x7ff1bcf32c40], txn-recover: Recovering log 12 through 13
+2020-07-14T16:25:10.673+0800 I  STORAGE  [initandlisten] WiredTiger message [1594715110:673557][22303:0x7ff1bcf32c40], txn-recover: Recovering log 13 through 13
+2020-07-14T16:25:10.737+0800 I  STORAGE  [initandlisten] WiredTiger message [1594715110:737379][22303:0x7ff1bcf32c40], txn-recover: Set global recovery timestamp: (0, 0)
+2020-07-14T16:25:10.791+0800 I  RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2020-07-14T16:25:10.801+0800 I  STORAGE  [initandlisten] Timestamp monitor starting
+2020-07-14T16:25:10.816+0800 I  CONTROL  [initandlisten] 
+2020-07-14T16:25:10.816+0800 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2020-07-14T16:25:10.816+0800 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2020-07-14T16:25:10.816+0800 I  CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2020-07-14T16:25:10.816+0800 I  CONTROL  [initandlisten] 
+2020-07-14T16:25:10.816+0800 I  CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2020-07-14T16:25:10.816+0800 I  CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2020-07-14T16:25:10.816+0800 I  CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2020-07-14T16:25:10.816+0800 I  CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2020-07-14T16:25:10.816+0800 I  CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2020-07-14T16:25:10.816+0800 I  CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2020-07-14T16:25:10.816+0800 I  CONTROL  [initandlisten] 
+2020-07-14T16:25:10.816+0800 I  CONTROL  [initandlisten] 
+2020-07-14T16:25:10.816+0800 I  CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2020-07-14T16:25:10.816+0800 I  CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2020-07-14T16:25:10.816+0800 I  CONTROL  [initandlisten] 
+2020-07-14T16:25:10.816+0800 I  CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2020-07-14T16:25:10.816+0800 I  CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2020-07-14T16:25:10.816+0800 I  CONTROL  [initandlisten] 
+2020-07-14T16:25:10.816+0800 I  CONTROL  [initandlisten] ** WARNING: soft rlimits too low. rlimits set to 7269 processes, 100001 files. Number of processes should be at least 50000.5 : 0.5 times number of files.
+2020-07-14T16:25:10.816+0800 I  CONTROL  [initandlisten] 
+2020-07-14T16:25:10.820+0800 I  SHARDING [initandlisten] Marking collection local.system.replset as collection version: <unsharded>
+2020-07-14T16:25:10.840+0800 I  STORAGE  [initandlisten] Flow Control is enabled on this deployment.
+2020-07-14T16:25:10.841+0800 I  SHARDING [initandlisten] Marking collection admin.system.roles as collection version: <unsharded>
+2020-07-14T16:25:10.841+0800 I  SHARDING [initandlisten] Marking collection admin.system.version as collection version: <unsharded>
+2020-07-14T16:25:10.848+0800 I  SHARDING [initandlisten] Marking collection local.startup_log as collection version: <unsharded>
+2020-07-14T16:25:10.848+0800 I  FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2020-07-14T16:25:10.850+0800 I  SHARDING [LogicalSessionCacheRefresh] Marking collection config.system.sessions as collection version: <unsharded>
+2020-07-14T16:25:10.851+0800 I  SHARDING [LogicalSessionCacheReap] Marking collection config.transactions as collection version: <unsharded>
+2020-07-14T16:25:10.851+0800 I  NETWORK  [listener] Listening on /tmp/mongodb-27017.sock
+2020-07-14T16:25:10.851+0800 I  NETWORK  [listener] Listening on 127.0.0.1
+2020-07-14T16:25:10.851+0800 I  NETWORK  [listener] waiting for connections on port 27017
+2020-07-14T16:25:11.002+0800 I  SHARDING [ftdc] Marking collection local.oplog.rs as collection version: <unsharded>
+2020-07-14T16:25:14.230+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:42012 #1 (1 connection now open)
+2020-07-14T16:25:14.230+0800 I  NETWORK  [conn1] received client metadata from 127.0.0.1:42012 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.7" }, os: { type: "Linux", name: "CentOS Linux release 7.7.1908 (Core)", architecture: "x86_64", version: "Kernel 3.10.0-957.21.3.el7.x86_64" } }
+2020-07-14T16:28:07.759+0800 I  SHARDING [conn1] Marking collection new.col as collection version: <unsharded>
+2020-07-14T17:02:12.714+0800 I  CONTROL  [signalProcessingThread] got signal 1 (Hangup), will terminate after current cmd ends
+2020-07-14T17:02:12.748+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:42014 #2 (2 connections now open)
+2020-07-14T17:02:12.748+0800 I  NETWORK  [conn2] received client metadata from 127.0.0.1:42014 conn2: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.7" }, os: { type: "Linux", name: "CentOS Linux release 7.7.1908 (Core)", architecture: "x86_64", version: "Kernel 3.10.0-957.21.3.el7.x86_64" } }
+2020-07-14T17:02:12.905+0800 I  COMMAND  [conn2] command admin.$cmd.aggregate appName: "MongoDB Shell" command: currentOp { currentOp: 1, $db: "admin" } keysExamined:0 docsExamined:0 cursorExhausted:1 numYields:0 nreturned:1 reslen:1424 locks:{} protocol:op_msg 155ms
+2020-07-14T17:02:12.906+0800 I  NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2020-07-14T17:02:12.918+0800 I  NETWORK  [listener] removing socket file: /tmp/mongodb-27017.sock
+2020-07-14T17:02:12.922+0800 I  NETWORK  [conn1] end connection 127.0.0.1:42012 (1 connection now open)
+2020-07-14T17:02:12.922+0800 I  -        [signalProcessingThread] Stopping further Flow Control ticket acquisitions.
+2020-07-14T17:02:12.923+0800 I  NETWORK  [conn2] end connection 127.0.0.1:42014 (0 connections now open)
+2020-07-14T17:02:12.987+0800 I  CONTROL  [signalProcessingThread] Shutting down free monitoring
+2020-07-14T17:02:12.987+0800 I  FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2020-07-14T17:02:12.990+0800 I  STORAGE  [signalProcessingThread] Deregistering all the collections
+2020-07-14T17:02:12.993+0800 I  STORAGE  [signalProcessingThread] Timestamp monitor shutting down
+2020-07-14T17:02:12.993+0800 I  STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2020-07-14T17:02:12.993+0800 I  STORAGE  [signalProcessingThread] Shutting down session sweeper thread
+2020-07-14T17:02:12.993+0800 I  STORAGE  [signalProcessingThread] Finished shutting down session sweeper thread
+2020-07-14T17:02:12.993+0800 I  STORAGE  [signalProcessingThread] Shutting down journal flusher thread
+2020-07-14T17:02:13.022+0800 I  STORAGE  [signalProcessingThread] Finished shutting down journal flusher thread
+2020-07-14T17:02:13.022+0800 I  STORAGE  [signalProcessingThread] Shutting down checkpoint thread
+2020-07-14T17:02:13.022+0800 I  STORAGE  [signalProcessingThread] Finished shutting down checkpoint thread
+2020-07-14T17:02:13.075+0800 I  STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2020-07-14T17:02:13.076+0800 I  CONTROL  [signalProcessingThread] now exiting
+2020-07-14T17:02:13.076+0800 I  CONTROL  [signalProcessingThread] shutting down with code:0
